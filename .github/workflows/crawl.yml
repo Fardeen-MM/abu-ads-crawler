@@ -1,0 +1,29 @@
+name: crawl
+on:
+  workflow_dispatch:
+    inputs:
+      jobs:
+        description: "JSON list of job indexes, e.g. [0,1,2]"
+        required: true
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        job: ${{ fromJSON(inputs.jobs) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install playwright==1.48.0 && python -m playwright install --with-deps chromium
+      - run: timeout 85m python tools/run_one.py ${{ matrix.job }} || true
+        env: { PAUSE: "20" }
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: crawl-${{ matrix.job }}
+          path: crawl/
+          if-no-files-found: warn
