@@ -20,7 +20,7 @@ from playwright.sync_api import sync_playwright
 ROOT = pathlib.Path(__file__).resolve().parent.parent / "crawl"
 FULL = 28
 PAUSE = 45
-BASE = ("https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country={c}&media_type=all"
+BASE = ("https://www.facebook.com/ads/library/?active_status={s}&ad_type=all&country={c}&media_type={m}"
         "&sort_data[mode]=total_impressions&sort_data[direction]=desc")
 
 
@@ -68,11 +68,12 @@ def fetch(browser, url):
 
 
 def job_base(j):
-    b = BASE.replace("{c}", j["country"])
+    b = BASE.replace("{c}", j["country"]).replace("{s}", j.get("status", "active")).replace("{m}", j.get("media", "all"))
+    tag = ("" if j.get("status", "active") == "active" else "all_") + ("" if j.get("media", "all") == "all" else j["media"] + "_")
     if j.get("page"):
-        return b + f"&search_type=page&view_all_page_id={j['page']}", f"{j['country']}_page-{j['page']}"
+        return b + f"&search_type=page&view_all_page_id={j['page']}", f"{tag}{j['country']}_page-{j['page']}"
     return (b + f"&q={quote(j['q'])}&search_type=keyword_unordered",
-            f"{j['country']}_" + re.sub(r"[^a-z0-9]+", "-", j["q"].lower()).strip("-"))
+            f"{tag}{j['country']}_" + re.sub(r"[^a-z0-9]+", "-", j["q"].lower()).strip("-"))
 
 
 def run(jobs_file):
