@@ -57,7 +57,9 @@ def fetch(browser, url):
                     pass
         if reported is None and not hits:
             # A genuinely empty search still prints "0 results"; no count at all = blocked page.
-            return None if "0 results" not in text else ([], 0)
+            if "No ads match" in text or re.search(r"\b0 results", text):
+                return ([], 0)
+            return None
         return hits, reported
     except Exception:
         return None
