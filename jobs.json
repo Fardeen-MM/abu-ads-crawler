@@ -1354,5 +1354,281 @@
 "q": "partner visa",
 "lo": "2018-01-01",
 "hi": "2026-07-15"
+},
+{
+"country": "US",
+"q": "bookkeeping services",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "US",
+"q": "accountant",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "US",
+"q": "tax preparation",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "US",
+"q": "CPA",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "US",
+"q": "IRS tax debt",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "US",
+"q": "financial advisor",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "US",
+"q": "retirement planning",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "US",
+"q": "mortgage broker",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "US",
+"q": "life insurance",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "US",
+"q": "health insurance broker",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "US",
+"q": "credit repair",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "US",
+"q": "debt relief",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "US",
+"q": "debt consolidation",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "US",
+"q": "LLC formation",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "US",
+"q": "trademark attorney",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "US",
+"q": "payroll services",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "US",
+"q": "wills and trusts",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "US",
+"q": "social security disability",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "US",
+"q": "workers compensation lawyer",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "US",
+"q": "medicare plans",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "US",
+"q": "home loan",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "US",
+"q": "business funding",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "US",
+"q": "small business loans",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "US",
+"q": "notary services",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "CA",
+"q": "bookkeeping",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "CA",
+"q": "accountant",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "CA",
+"q": "tax return",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "CA",
+"q": "mortgage broker",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "CA",
+"q": "financial advisor",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "CA",
+"q": "life insurance",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "CA",
+"q": "debt relief",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "CA",
+"q": "credit counselling",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "CA",
+"q": "paralegal",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "CA",
+"q": "notary public",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "CA",
+"q": "settlement services",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "CA",
+"q": "newcomers to Canada",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "CA",
+"q": "credential recognition",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "CA",
+"q": "job in Canada",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "GB",
+"q": "accountant",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "GB",
+"q": "tax return",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "GB",
+"q": "mortgage advisor",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "GB",
+"q": "will writing",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "GB",
+"q": "debt help",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "AU",
+"q": "accountant",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "AU",
+"q": "tax agent",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
+},
+{
+"country": "AU",
+"q": "mortgage broker",
+"lo": "2018-01-01",
+"hi": "2026-07-15"
 }
 ]
