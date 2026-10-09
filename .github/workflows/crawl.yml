@@ -8,7 +8,7 @@ on:
 jobs:
   crawl:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 45
     strategy:
       fail-fast: false
       max-parallel: 20
@@ -19,7 +19,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.11" }
       - run: pip install playwright==1.48.0 && python -m playwright install --with-deps chromium
-      - run: timeout 18m python tools/run_one.py ${{ matrix.job }} || true
+      - run: timeout 38m python tools/run_one.py ${{ matrix.job }} || true
         env: { PAUSE: "8", BACKOFF0: "120", MAX_BLOCKS: "4" }
       - uses: actions/upload-artifact@v4
         if: always()
