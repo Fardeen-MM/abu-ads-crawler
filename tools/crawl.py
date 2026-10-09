@@ -115,14 +115,15 @@ def run(jobs_file):
                             h["_job"] = slug
                             f.write(json.dumps(h, ensure_ascii=False) + "\n")
                 da, dz = dt.date.fromisoformat(a), dt.date.fromisoformat(z)
-                if len(hits) >= FULL and (dz - da).days >= 1:
+                more = (reported is not None and reported > len(hits)) or len(hits) >= FULL
+                if more and (dz - da).days >= 1:
                     mid = da + (dz - da) // 2
                     st["queue"][:0] = [[b, a, mid.isoformat()], [b, (mid + dt.timedelta(days=1)).isoformat(), z]]
-                elif len(hits) >= FULL and "media_type=all" in b:
+                elif more and "media_type=all" in b:
                     st["queue"][:0] = [[b.replace("media_type=all", f"media_type={m}"), a, z] for m in ("image", "video", "meme", "none")]
-                elif len(hits) >= FULL and "publisher_platforms" not in b:
+                elif more and "publisher_platforms" not in b:
                     st["queue"][:0] = [[b + f"&publisher_platforms[0]={p}", a, z] for p in ("facebook", "instagram", "audience_network", "messenger")]
-                elif len(hits) >= FULL:
+                elif more:
                     st["saturated"].append([a, b[-80:]])
                 print(time.strftime("%H:%M"), slug, f"{a}..{z}: {len(hits)} (+{new}) total {len(seen)} / reported {st['reported']}",
                       f"queue {len(st['queue'])}", flush=True)
