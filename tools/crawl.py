@@ -13,7 +13,7 @@ Each search records Facebook's own "~N results" total so coverage can be checked
 usage:  python3 crawl.py jobs.json        (jobs: [{"country":"US","q":"free masterclass","lo":"2018-01-01","hi":"2026-04-30"},
                                                   {"country":"ALL","page":"293210107207936","lo":...,"hi":...}])
 """
-import datetime as dt, json, re, sys, time, pathlib
+import datetime as dt, json, os, re, sys, time, pathlib
 from urllib.parse import quote
 from playwright.sync_api import sync_playwright
 
@@ -90,16 +90,19 @@ def run(jobs_file):
             seen = set()
             if out_f.exists():
                 seen = {json.loads(l)["ad_archive_id"] for l in open(out_f)}
-            backoff = 900
+            backoff = int(os.environ.get("BACKOFF0", "900")); blocks = 0
             while st["queue"]:
                 b, a, z = st["queue"][0]
                 url = b + f"&start_date[min]={a}&start_date[max]={z}"
                 res = fetch(browser, url)
                 if res is None:
                     print(time.strftime("%H:%M"), slug, f"blocked on {a}..{z}; waiting {backoff // 60} min", flush=True)
+                    blocks += 1
+                    if blocks > int(os.environ.get("MAX_BLOCKS", "999")):
+                        print("giving up on this runner (still blocked)", flush=True); break
                     time.sleep(backoff); backoff = min(backoff * 2, 3600)
                     continue
-                backoff = 900
+                backoff = int(os.environ.get("BACKOFF0", "900")); blocks = 0
                 hits, reported = res
                 st["queue"].pop(0); st["done"] += 1
                 if st["reported"] is None and a == j["lo"] and z == j["hi"] and "media_type=all" in b:
