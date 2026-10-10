@@ -1726,5 +1726,119 @@
   "q": "compensation lawyer",
   "lo": "2018-01-01",
   "hi": "2026-07-15"
+ },
+ {
+  "country": "US",
+  "q": "immigration attorney consultation fee",
+  "lo": "2018-01-01",
+  "hi": "2026-07-15"
+ },
+ {
+  "country": "US",
+  "q": "paid consultation attorney",
+  "lo": "2018-01-01",
+  "hi": "2026-07-15"
+ },
+ {
+  "country": "US",
+  "q": "family law attorney",
+  "lo": "2018-01-01",
+  "hi": "2026-07-15"
+ },
+ {
+  "country": "US",
+  "q": "divorce lawyer",
+  "lo": "2018-01-01",
+  "hi": "2026-07-15"
+ },
+ {
+  "country": "US",
+  "q": "criminal defense attorney",
+  "lo": "2018-01-01",
+  "hi": "2026-07-15"
+ },
+ {
+  "country": "US",
+  "q": "estate planning attorney",
+  "lo": "2018-01-01",
+  "hi": "2026-07-15"
+ },
+ {
+  "country": "US",
+  "q": "bankruptcy attorney",
+  "lo": "2018-01-01",
+  "hi": "2026-07-15"
+ },
+ {
+  "country": "US",
+  "q": "DUI lawyer",
+  "lo": "2018-01-01",
+  "hi": "2026-07-15"
+ },
+ {
+  "country": "US",
+  "q": "green card lawyer",
+  "lo": "2018-01-01",
+  "hi": "2026-07-15"
+ },
+ {
+  "country": "US",
+  "q": "asylum lawyer",
+  "lo": "2018-01-01",
+  "hi": "2026-07-15"
+ },
+ {
+  "country": "CA",
+  "q": "family lawyer",
+  "lo": "2018-01-01",
+  "hi": "2026-07-15"
+ },
+ {
+  "country": "CA",
+  "q": "criminal lawyer",
+  "lo": "2018-01-01",
+  "hi": "2026-07-15"
+ },
+ {
+  "country": "CA",
+  "q": "immigration lawyer consultation",
+  "lo": "2018-01-01",
+  "hi": "2026-07-15"
+ },
+ {
+  "country": "CA",
+  "q": "real estate lawyer",
+  "lo": "2018-01-01",
+  "hi": "2026-07-15"
+ },
+ {
+  "country": "CA",
+  "q": "divorce lawyer",
+  "lo": "2018-01-01",
+  "hi": "2026-07-15"
+ },
+ {
+  "country": "GB",
+  "q": "immigration solicitor",
+  "lo": "2018-01-01",
+  "hi": "2026-07-15"
+ },
+ {
+  "country": "GB",
+  "q": "family solicitor",
+  "lo": "2018-01-01",
+  "hi": "2026-07-15"
+ },
+ {
+  "country": "AU",
+  "q": "immigration lawyer",
+  "lo": "2018-01-01",
+  "hi": "2026-07-15"
+ },
+ {
+  "country": "AU",
+  "q": "family lawyer",
+  "lo": "2018-01-01",
+  "hi": "2026-07-15"
  }
 ]
