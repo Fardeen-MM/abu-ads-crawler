@@ -1,0 +1,38 @@
+name: yt-transcripts
+on:
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: 'JSON array of YouTube video ids'
+        required: true
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        id: ${{ fromJSON(github.event.inputs.ids) }}
+    steps:
+      - run: pip install -q youtube-transcript-api yt-dlp
+      - name: fetch
+        run: |
+          python3 - <<'PY'
+          import json, subprocess
+          vid = "${{ matrix.id }}"
+          try:
+              meta = json.loads(subprocess.run(["yt-dlp","-J","--skip-download",f"https://youtu.be/{vid}"],capture_output=True,text=True,timeout=120).stdout or "{}")
+          except Exception: meta = {}
+          head = f"# {meta.get('title','?')} | {meta.get('channel','?')} | https://youtu.be/{vid} | {meta.get('duration_string','?')}"
+          from youtube_transcript_api import YouTubeTranscriptApi as Y
+          try:
+              t = Y().fetch(vid)
+              body = "\n".join(f"[{int(s.start)//60:02d}:{int(s.start)%60:02d}] {s.text}" for s in t)
+          except Exception as e:
+              body = f"FAILED {type(e).__name__}"
+          open(f"{vid}.txt","w").write(head + "\n" + body + "\n")
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tx-${{ matrix.id }}
+          path: ${{ matrix.id }}.txt
