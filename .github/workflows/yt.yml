@@ -14,14 +14,17 @@ jobs:
       matrix:
         id: ${{ fromJSON(github.event.inputs.ids) }}
     steps:
-      - run: pip install -q youtube-transcript-api yt-dlp
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -q youtube-transcript-api yt-dlp
       - name: fetch
         run: |
           python3 - <<'PY'
           import json, subprocess
           vid = "${{ matrix.id }}"
           try:
-              meta = json.loads(subprocess.run(["yt-dlp","-J","--skip-download",f"https://youtu.be/{vid}"],capture_output=True,text=True,timeout=120).stdout or "{}")
+              meta = json.loads(subprocess.run(["python","-m","yt_dlp","-J","--skip-download",f"https://youtu.be/{vid}"],capture_output=True,text=True,timeout=120).stdout or "{}")
           except Exception: meta = {}
           head = f"# {meta.get('title','?')} | {meta.get('channel','?')} | https://youtu.be/{vid} | {meta.get('duration_string','?')}"
           from youtube_transcript_api import YouTubeTranscriptApi as Y
