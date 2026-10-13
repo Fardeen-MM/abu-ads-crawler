@@ -24,7 +24,7 @@ jobs:
           import json, subprocess
           vid = "${{ matrix.id }}"
           try:
-              meta = json.loads(subprocess.run(["python","-m","yt_dlp","-J","--skip-download",f"https://youtu.be/{vid}"],capture_output=True,text=True,timeout=120).stdout or "{}")
+              meta = json.loads(subprocess.run(["python","-m","yt_dlp","-J","--skip-download",f"https://youtu.be/{vid}"],capture_output=True,text=True,timeout=120).stdout or "{}") or {}
           except Exception: meta = {}
           head = f"# {meta.get('title','?')} | {meta.get('channel','?')} | https://youtu.be/{vid} | {meta.get('duration_string','?')}"
           from youtube_transcript_api import YouTubeTranscriptApi as Y
@@ -33,6 +33,14 @@ jobs:
               body = "\n".join(f"[{int(s.start)//60:02d}:{int(s.start)%60:02d}] {s.text}" for s in t)
           except Exception as e:
               body = f"FAILED {type(e).__name__}"
+              # fallback: yt-dlp auto captions (json3)
+              subprocess.run(["python","-m","yt_dlp","--skip-download","--write-auto-subs","--write-subs","--sub-langs","en.*","--sub-format","json3","-o","sub",f"https://youtu.be/{vid}"],capture_output=True,timeout=180)
+              import glob
+              for g in glob.glob("sub*.json3"):
+                  ev = json.load(open(g)).get("events",[])
+                  lines = [f"[{int(e.get('tStartMs',0))//60000:02d}:{int(e.get('tStartMs',0))//1000%60:02d}] " + "".join(x.get("utf8","") for x in e.get("segs",[])).strip() for e in ev if e.get("segs")]
+                  lines = [l for l in lines if l.split("] ",1)[1]]
+                  if lines: body = "\n".join(lines); break
           open(f"{vid}.txt","w").write(head + "\n" + body + "\n")
           PY
       - uses: actions/upload-artifact@v4
