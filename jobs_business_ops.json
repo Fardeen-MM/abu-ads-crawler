@@ -1,0 +1,765 @@
+[
+{
+"country": "ALL",
+"q": "notary signing agent",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "loan signing agent",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "become a notary",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "freight dispatcher",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "truck dispatch business",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "start a trucking business",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "vending machine business",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "start a cleaning business",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "commercial cleaning business",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "janitorial business",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "home care agency",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "start a home care agency",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "start a senior care business",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "credit repair business",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "start a credit repair business",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "start an insurance agency",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "become an insurance agent free training",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "buy a business",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "acquisition entrepreneur",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "buy a small business",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "franchise opportunity",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "start a franchise",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "start a staffing agency",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "staffing agency business",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "start a recruitment agency",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "recruitment agency business",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "start a recruiting business",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "become a recruiter",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "start a business free training",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "start your own business webinar",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "business owner masterclass",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "laundromat business",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "car wash business",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "mobile detailing business",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "pressure washing business",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "airbnb arbitrage",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "real estate wholesaling",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "medical billing business",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "transaction coordinator",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "virtual assistant business",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "lead generation agency",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "start an agency free training",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "be your own boss",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "turnkey business",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "business in a box",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "work from home business webinar",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "quit your 9 to 5 free training",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "side hustle masterclass",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "side income free webinar",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "own your own business",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "start a home based business",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "startup masterclass",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "entrepreneur free workshop",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "passive income business free training",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "ecommerce business free webinar",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "amazon fba free training",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "print on demand business",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "start a coaching business free",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "book a call business owner",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "3 day business challenge",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "5 day business challenge",
+"lo": "2022-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "side hustle",
+"lo": "2022-01-01",
+"hi": "2022-12-31",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "side hustle",
+"lo": "2023-01-01",
+"hi": "2023-12-31",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "side hustle",
+"lo": "2024-01-01",
+"hi": "2024-12-31",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "side hustle",
+"lo": "2025-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "start your own business",
+"lo": "2022-01-01",
+"hi": "2022-12-31",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "start your own business",
+"lo": "2023-01-01",
+"hi": "2023-12-31",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "start your own business",
+"lo": "2024-01-01",
+"hi": "2024-12-31",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "start your own business",
+"lo": "2025-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "be your own boss",
+"lo": "2022-01-01",
+"hi": "2022-12-31",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "be your own boss",
+"lo": "2023-01-01",
+"hi": "2023-12-31",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "be your own boss",
+"lo": "2024-01-01",
+"hi": "2024-12-31",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "be your own boss",
+"lo": "2025-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "work from home business",
+"lo": "2022-01-01",
+"hi": "2022-12-31",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "work from home business",
+"lo": "2023-01-01",
+"hi": "2023-12-31",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "work from home business",
+"lo": "2024-01-01",
+"hi": "2024-12-31",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "work from home business",
+"lo": "2025-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "passive income",
+"lo": "2022-01-01",
+"hi": "2022-12-31",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "passive income",
+"lo": "2023-01-01",
+"hi": "2023-12-31",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "passive income",
+"lo": "2024-01-01",
+"hi": "2024-12-31",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "passive income",
+"lo": "2025-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "free masterclass business",
+"lo": "2022-01-01",
+"hi": "2022-12-31",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "free masterclass business",
+"lo": "2023-01-01",
+"hi": "2023-12-31",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "free masterclass business",
+"lo": "2024-01-01",
+"hi": "2024-12-31",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "free masterclass business",
+"lo": "2025-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "US",
+"q": "start a business",
+"lo": "2022-01-01",
+"hi": "2022-12-31",
+"status": "all"
+},
+{
+"country": "US",
+"q": "start a business",
+"lo": "2023-01-01",
+"hi": "2023-12-31",
+"status": "all"
+},
+{
+"country": "US",
+"q": "start a business",
+"lo": "2024-01-01",
+"hi": "2024-12-31",
+"status": "all"
+},
+{
+"country": "US",
+"q": "start a business",
+"lo": "2025-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "GB",
+"q": "start a business",
+"lo": "2022-01-01",
+"hi": "2022-12-31",
+"status": "all"
+},
+{
+"country": "GB",
+"q": "start a business",
+"lo": "2023-01-01",
+"hi": "2023-12-31",
+"status": "all"
+},
+{
+"country": "GB",
+"q": "start a business",
+"lo": "2024-01-01",
+"hi": "2024-12-31",
+"status": "all"
+},
+{
+"country": "GB",
+"q": "start a business",
+"lo": "2025-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "US",
+"q": "free webinar business",
+"lo": "2022-01-01",
+"hi": "2022-12-31",
+"status": "all"
+},
+{
+"country": "US",
+"q": "free webinar business",
+"lo": "2023-01-01",
+"hi": "2023-12-31",
+"status": "all"
+},
+{
+"country": "US",
+"q": "free webinar business",
+"lo": "2024-01-01",
+"hi": "2024-12-31",
+"status": "all"
+},
+{
+"country": "US",
+"q": "free webinar business",
+"lo": "2025-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "GB",
+"q": "free webinar business",
+"lo": "2022-01-01",
+"hi": "2022-12-31",
+"status": "all"
+},
+{
+"country": "GB",
+"q": "free webinar business",
+"lo": "2023-01-01",
+"hi": "2023-12-31",
+"status": "all"
+},
+{
+"country": "GB",
+"q": "free webinar business",
+"lo": "2024-01-01",
+"hi": "2024-12-31",
+"status": "all"
+},
+{
+"country": "GB",
+"q": "free webinar business",
+"lo": "2025-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "US",
+"q": "business opportunity",
+"lo": "2022-01-01",
+"hi": "2022-12-31",
+"status": "all"
+},
+{
+"country": "US",
+"q": "business opportunity",
+"lo": "2023-01-01",
+"hi": "2023-12-31",
+"status": "all"
+},
+{
+"country": "US",
+"q": "business opportunity",
+"lo": "2024-01-01",
+"hi": "2024-12-31",
+"status": "all"
+},
+{
+"country": "US",
+"q": "business opportunity",
+"lo": "2025-01-01",
+"hi": "2026-07-18",
+"status": "all"
+},
+{
+"country": "GB",
+"q": "business opportunity",
+"lo": "2022-01-01",
+"hi": "2022-12-31",
+"status": "all"
+},
+{
+"country": "GB",
+"q": "business opportunity",
+"lo": "2023-01-01",
+"hi": "2023-12-31",
+"status": "all"
+},
+{
+"country": "GB",
+"q": "business opportunity",
+"lo": "2024-01-01",
+"hi": "2024-12-31",
+"status": "all"
+},
+{
+"country": "GB",
+"q": "business opportunity",
+"lo": "2025-01-01",
+"hi": "2026-07-18",
+"status": "all"
+}
+]
