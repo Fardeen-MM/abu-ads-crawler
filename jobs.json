@@ -32519,5 +32519,278 @@
 "page": "347390699205393",
 "lo": "2018-01-01",
 "hi": "2026-10-11"
+},
+{
+"country": "US",
+"q": "remote closer",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "GB",
+"q": "remote closer",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "remote closer",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "US",
+"q": "high ticket closer",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "GB",
+"q": "high ticket closer",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "high ticket closer",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "US",
+"q": "high ticket sales",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "GB",
+"q": "high ticket sales",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "high ticket sales",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "US",
+"q": "appointment setter",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "GB",
+"q": "appointment setter",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "appointment setter",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "US",
+"q": "become a closer",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "GB",
+"q": "become a closer",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "become a closer",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "US",
+"q": "sales career",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "GB",
+"q": "sales career",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "sales career",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "US",
+"q": "NEPQ",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "GB",
+"q": "NEPQ",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "NEPQ",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "US",
+"q": "closing course",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "GB",
+"q": "closing course",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "ALL",
+"q": "closing course",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "US",
+"q": "learn high ticket sales",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "US",
+"q": "remote sales job",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "US",
+"q": "work from home sales",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "US",
+"q": "closer training free",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "US",
+"q": "setter closer",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "US",
+"q": "sales training free masterclass",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "US",
+"q": "cold calling",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "US",
+"q": "career in sales",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "US",
+"q": "remote sales career",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "US",
+"q": "sales mastery",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "US",
+"q": "SDR training",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "US",
+"q": "commission only sales",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "US",
+"q": "tech sales career",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "US",
+"q": "sell high ticket offers",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
+},
+{
+"country": "US",
+"q": "remote appointment setting",
+"lo": "2022-01-01",
+"hi": "2026-10-18",
+"status": "all"
 }
 ]
