@@ -1,0 +1,33 @@
+name: bizpg
+on:
+  workflow_dispatch:
+    inputs:
+      jobs:
+        description: "JSON list of job indexes"
+        required: true
+      file:
+        description: "jobs file"
+        required: true
+        default: "jobs_bizop.json"
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        job: ${{ fromJSON(inputs.jobs) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install playwright==1.48.0 && python -m playwright install --with-deps chromium
+      - run: timeout 40m python tools/crawl_pages_adaptive.py ${{ inputs.file }} ${{ matrix.job }} || true
+        env: { PAUSE: "6", BACKOFF0: "120" }
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: bizop-${{ github.run_id }}-${{ inputs.file }}-${{ matrix.job }}
+          path: crawl/
+          if-no-files-found: warn
