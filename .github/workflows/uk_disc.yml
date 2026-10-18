@@ -1,0 +1,27 @@
+name: uk_disc
+on:
+  workflow_dispatch:
+    inputs:
+      batches:
+        description: "JSON list of [id, [[country,query],...]]"
+        required: true
+jobs:
+  d:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        b: ${{ fromJSON(inputs.batches) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install playwright==1.48.0 && python -m playwright install --with-deps chromium
+      - run: python tools/uk_disc.py '${{ toJSON(matrix.b.q) }}' '${{ matrix.b.id }}' || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: disc-${{ matrix.b.id }}
+          path: crawl/
+          if-no-files-found: warn
