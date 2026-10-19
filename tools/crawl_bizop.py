@@ -34,9 +34,9 @@ def windows(lo, hi, days):
         e = min(d + dt.timedelta(days=days-1), end); yield d.isoformat(), e.isoformat(); d = e + dt.timedelta(days=1)
 def run(job, pause):
     c = job["country"]; st = job.get("status","all")
-    base = f"https://www.facebook.com/ads/library/?active_status={st}&ad_type=all&country={c}&media_type=all&sort_data[mode]=total_impressions&sort_data[direction]=desc"
-    if job.get("page"): base += f"&search_type=page&view_all_page_id={job['page']}"; slug = f"{c}_page-{job['page']}"
-    else: base += f"&q={quote(job['q'])}&search_type=keyword_unordered"; slug = f"{c}_" + re.sub(r"[^a-z0-9]+","-",job["q"].lower()).strip("-")
+    base = f"https://www.facebook.com/ads/library/?active_status={st}&ad_type=all&country={c}&media_type={job.get('media','all')}&sort_data[mode]=total_impressions&sort_data[direction]=desc"
+    if job.get("page"): base += f"&search_type=page&view_all_page_id={job['page']}"; slug = f"{c}_page-{job['page']}" + ("_"+job["media"] if job.get("media") else "")
+    else: base += f"&q={quote(job['q'])}&search_type=keyword_unordered"; slug = f"{c}_" + re.sub(r"[^a-z0-9]+","-",job["q"].lower()).strip("-") + ("_"+job["media"] if job.get("media") else "")
     seen = set(); log = []
     with sync_playwright() as pw, open(OUT/f"{slug}.jsonl","a") as f:
         br = pw.chromium.launch(); blocks = 0
